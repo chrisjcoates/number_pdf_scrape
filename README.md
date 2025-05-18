@@ -1,3 +1,28 @@
-Created to part automatic a proccess I was doing manually at work.
+# PDF Order Number Comparator
 
-The application scrapes two pdf documents, looks for and retrieves order numbers. It then checks to see if there are any order numbers in pdf 1 that are missing in pdf 2 and outputs the missing order numbers in cvs format.
+This utility was created to partially automate a repetitive task I was performing manually at work.
+
+## What It Does
+
+The application compares order numbers between two PDF documents:
+
+1. **Scrapes** both PDFs for order numbers.
+2. **Identifies** order numbers present in **PDF 1** that are **missing from PDF 2**.
+3. **Outputs** the missing order numbers in a `.csv` file for easy review and further processing.
+
+---
+
+## Features
+
+- Extracts text and parses order numbers from PDF documents
+- Compares sets of order numbers for discrepancies
+- Exports missing entries to a CSV file
+- Saves time and reduces human error in repetitive tasks
+
+---
+
+## Requirements
+
+- python3.13
+- PySide6
+- Pdfplumber
